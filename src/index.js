@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter> {/* 라우터 적용하기 위해 사용 */}
     <App />
   </BrowserRouter>
 );

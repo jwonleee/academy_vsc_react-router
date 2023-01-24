@@ -10,7 +10,7 @@ const Home = () => {
 
             <ul>
                 <li><Link to="/user">회원페이지</Link></li>
-                <li><Link to="/user?id=aa123&age=1">회원페이지</Link></li>
+                <li><Link to="/user?id=aa123&age=1">회원페이지</Link></li>{/* 쿼리스트링 */}
 
                 <li><Link to="/info/1">info페이지</Link></li>
                 <li><Link to="/info/2">info페이지</Link></li>

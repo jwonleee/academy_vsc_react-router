@@ -3,14 +3,17 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const MyPage = () => {
 
-    /* 
-        첫번째 렌더링 과정에서는 사용할 수 없음
+    
+        // 첫번째 렌더링 과정에서는 사용할 수 없음
+        // React.useEffect()에서 navigate()를 호출해야 합니다.
+        /*
         let nav = useNavigate();
         let loginYN = false; //로그인 여부
         if(loginYN === false) { //아직 로그인이 안되어 있다
             nav('/');
         }
-     */
+        */
+    
 
 
     //권한이 없으면 리다이렉트

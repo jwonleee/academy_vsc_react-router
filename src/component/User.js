@@ -12,8 +12,8 @@ const User = () => {
     //2. useSearchParams 훅
     //배열 반환 [값을 조회하거나 수정하는 get set, 쿼리스트링을 업데이트하는 함수]
     const [obj, setObj] = useSearchParams();
-    // console.log(obj); //객체 - 객체의 get, set메서드 사용
-    // console.log(setObj); //함수
+    console.log(obj); //객체 - 객체의 get, set메서드 사용
+    console.log(setObj); //함수
 
     let id = obj.get("id"); //request.getParameter("id")
     let age = obj.get("age");

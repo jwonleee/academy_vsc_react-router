@@ -12,13 +12,13 @@ const Info = () => {
     }
 
     //useParams();
-    let param = useParams();
-    //console.log(param); //{num: '1'}, {num: '2'}, {num: '3'}나옴, URL주소에 값을 키로 받습니다.
+    let param = useParams(); //객체로 반환
+    // console.log(param); //{num: '1'}, {num: '2'}, {num: '3'}나옴, URL주소에 값을 키로 받습니다.
     console.log(param.num); //1, 2, 3 나옴
 
-    // const obj = data[param.num];
-    // console.log(obj); //번호에 맞는 객체가 나옴
-    const {name, subject} = data[param.num];
+    const obj = data[param.num]; // const obj = data[1];
+    console.log(obj); //번호에 맞는 객체가 나옴, {name: '리사', subject: '리액트라우터'}
+    const {name, subject} = data[param.num]; //데이터의 1번을 name, subject 담아줌
 
     return (
         <div>
