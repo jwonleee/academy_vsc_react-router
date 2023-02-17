@@ -1,22 +1,23 @@
-import { Fragment } from "react"
-import { Route, Routes } from "react-router-dom";
-import Header from "./layout/Header";
-import NewsHome from "./component2/NewsHome";
-
+import axios from "axios";
 
 
 const App = () => {
 
-    return (
-        
-        <Routes>
-            <Route element={<Header/>}> {/* 헤더 사용하려고 */}y
-                <Route path="/" element={<NewsHome/>}/> {/* 본문 내용 */}
-                <Route path="/:category" element={<NewsHome/>}/> {/* 본문 내용 */}
-            </Route>
-        </Routes>
+    const handleClick = async() => {
 
+        const data = {id: "aaa", name: "bbb"};
+
+        const result = await axios.post("http://localhost:8383/getJson", data);
+        console.log(result);
+    }
+
+    return (
+
+        <div>
+            <input type="button" onClick={handleClick} value="데이터요청하기" />
+        </div>
     )
+
 }
 
 export default App;
